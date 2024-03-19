@@ -1,0 +1,4 @@
+##age calculator
+birth_year = int(input("What is Your Birth Year?"))
+age = 2024 - birth_year
+print("Your Age Is :",age)
