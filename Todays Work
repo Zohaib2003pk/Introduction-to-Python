@@ -1,0 +1,24 @@
+msg =input("Enter Your Message:")
+words =msg.split()
+emojis ={
+    ":)" :"😊",
+    ":(" : "😥"      
+}
+output=""
+for word in words:
+  output=output+emojis.get(word,word) +" "
+  print(output)
+
+##################################
+zoo_animal = [["Lion", "Tiger"], ["Sparrow", "Eagle"], ["Bear", "Polar Bear"]]
+for animal in zoo_animal[0]:
+    print(animal)
+##################################
+#Weather forecasting
+temperature=int (input("Enter Temperature"))
+if temperature>=25 and temperature<=30:
+  print("Its Hot day,drink water")
+elif temperature >=31 and temperature <=35:
+    print("Extremly Hot Weather, better stay at home")
+else:
+  print(anything)
