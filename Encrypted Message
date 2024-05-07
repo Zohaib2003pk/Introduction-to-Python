@@ -1,0 +1,12 @@
+msg =input("Enter msg: ")
+shift=int(input("Enter your shift number"))
+encrypted_msg=""
+for letter in msg:
+  if letter.isalpha():
+    alphabetics="abcdefghijklmnopqrstuvwxyz"
+  if  letter.isupper():
+      alphabetics="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      position= alphabetics.find(letter)
+      shifted_position =(position+shift)%26
+      encrypted_msg+=alphabetics[shifted_position]
+      
