@@ -1,0 +1,39 @@
+class Shapes:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def Area(self):
+        area = self.length * self.width
+        print("Area is:", area)
+
+class Square(Shapes):
+    def __init__(self, length, width, Myshape):
+        super().__init__(length, width)
+        self.Myshape = Myshape
+        area_of_Square = self.length * self.width
+        print("The length is:", self.length, "The Width is:", self.width)
+        print("The area of Square is:", area_of_Square)
+
+obj = Square(12, 13, "This is Square shape")
+obj.Area()
+######################################
+class person:
+    def __init__(myselfObj,a,b):
+        myselfObj.a=a
+        myselfObj.b=b
+    def add(myselfObj):
+        total=myselfObj.a+myselfObj.b
+        print("Addition Of a and ")
+
+#####################################
+class person:
+    def __init__(self,age,name):
+        self.age=age
+        self.name=name
+    def Myhabbit(self):
+        print("Hello I am " +self.name+"\n")
+p1=person(21,"Zohaib")
+print("My Age is",p1.age)
+        
+        
